@@ -8,12 +8,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{A61A4405-CECF-4A45-984F-1E135CA5E5FD}</ProjectGuid>
+    <ProjectGuid>{7B9E8DCA-5302-4688-B31A-37F1E7594BCA}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SideScroller</RootNamespace>
-    <AssemblyName>SideScroller</AssemblyName>
+    <RootNamespace>COMP397_MailPilot</RootNamespace>
+    <AssemblyName>COMP2068-CreateJSBoilerPlate</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -62,15 +62,7 @@
     <Content Include="assets\audio\engine.ogg" />
     <Content Include="assets\audio\thunder.ogg" />
     <Content Include="assets\audio\yay.ogg" />
-    <Content Include="bin\COMP2068-CreateJSBoilerPlate.dll.config" />
-    <Content Include="obj\Debug\COMP397-MailPilot.csprojResolveAssemblyReference.cache" />
-    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
-    <Content Include="Scripts\game.js.map" />
-    <Content Include="Scripts\objects\cloud.js.map" />
-    <Content Include="Scripts\objects\gameobject.js.map" />
-    <Content Include="Scripts\objects\island.js.map" />
-    <Content Include="Scripts\objects\ocean.js.map" />
-    <Content Include="Scripts\objects\plane.js.map" />
+    <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -85,32 +77,16 @@
     <Content Include="assets\images\ocean.gif" />
     <Content Include="assets\images\plane.png" />
     <Content Include="assets\images\sideplane.gif" />
-    <Content Include="bin\COMP2068-CreateJSBoilerPlate.dll" />
-    <Content Include="bin\COMP2068-CreateJSBoilerPlate.pdb" />
-    <Content Include="COMP397-MailPilot.csproj" />
     <Content Include="css\game.css" />
     <Content Include="index.html" />
-    <Content Include="obj\Debug\COMP2068-CreateJSBoilerPlate.dll" />
-    <Content Include="obj\Debug\COMP2068-CreateJSBoilerPlate.pdb" />
-    <Content Include="obj\Debug\COMP397-MailPilot.csproj.FileListAbsolute.txt" />
-    <Content Include="Scripts\game.js" />
     <Content Include="Scripts\lib\easeljs-0.8.0.min.js" />
     <Content Include="Scripts\lib\preloadjs-0.6.0.min.js" />
     <Content Include="Scripts\lib\soundjs-0.6.0.min.js" />
     <Content Include="Scripts\lib\tweenjs-0.6.0.min.js" />
-    <Content Include="Scripts\objects\cloud.js" />
-    <Content Include="Scripts\objects\gameobject.js" />
-    <Content Include="Scripts\objects\island.js" />
-    <Content Include="Scripts\objects\ocean.js" />
-    <Content Include="Scripts\objects\plane.js" />
-    <Content Include="packages.config" />
     <None Include="Scripts\_references.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
-    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
-    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -122,7 +98,6 @@
     <TypeScriptCompile Include="Scripts\objects\plane.ts" />
     <TypeScriptCompile Include="Scripts\typings\createjs-lib\createjs-lib.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\easeljs\easeljs.d.ts" />
-    <TypeScriptCompile Include="Scripts\typings\jquery\jquery.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\preloadjs\preloadjs.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\soundjs\soundjs.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\tweenjs\tweenjs.d.ts" />
@@ -132,7 +107,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="assets\fonts\" />
-    <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -148,9 +122,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>6940</DevelopmentServerPort>
+          <DevelopmentServerPort>12288</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:6940/</IISUrl>
+          <IISUrl>http://localhost:12288/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

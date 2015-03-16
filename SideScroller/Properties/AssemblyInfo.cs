@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("SideScroller")]
+[assembly: AssemblyTitle("COMP397_MailPilot")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("SideScroller")]
+[assembly: AssemblyProduct("COMP397_MailPilot")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("26fe3597-268c-4b98-bcb2-07f597a2b910")]
+[assembly: Guid("ae2e5592-def2-4a67-8074-5ca9d200811a")]
 
 // Version information for an assembly consists of the following four values:
 //
