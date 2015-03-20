@@ -30,13 +30,13 @@ module states {
             this.ocean = new objects.Ocean();
             this.game.addChild(this.ocean);
 
-            //Game Over Label
-            this.mailPilotLabel = new objects.Label(500, 60, "MAIL PILOT");
-            this.mailPilotLabel.font = "60px Consolas";
-            this.mailPilotLabel.regX = this.mailPilotLabel.getMeasuredWidth() * 0.5;
-            this.mailPilotLabel.regY = this.mailPilotLabel.getMeasuredLineHeight() * 0.5;
-            this.game.addChild(this.mailPilotLabel);
-
+            //Game Logo
+            var logo = new createjs.Bitmap("assets/images/logo.png");
+            logo.x = 350;
+            logo.y = 30;
+            this.game.addChild(logo);
+            
+          
 
             //Play Button
             this.playButton = new objects.Button(500, 300, "playButton");

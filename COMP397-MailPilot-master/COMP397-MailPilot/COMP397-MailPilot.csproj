@@ -63,6 +63,8 @@
     <Content Include="assets\audio\thunder.ogg" />
     <Content Include="assets\audio\yay.ogg" />
     <Content Include="assets\images\asteroid.png" />
+    <Content Include="assets\images\gameover.png" />
+    <Content Include="assets\images\logo.png" />
     <Content Include="assets\images\playAgainButton.png" />
     <Content Include="assets\images\playGameButton.png" />
     <Content Include="assets\images\powerPlanet.png" />

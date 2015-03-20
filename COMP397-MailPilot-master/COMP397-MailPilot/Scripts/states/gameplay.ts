@@ -70,6 +70,7 @@ module states {
                     }
                     if (collider.name == "island") {
                         this.scoreboard.score += 100;
+                        this.island.visible = false;
                     }
                 }
                 collider.isColliding = true;
