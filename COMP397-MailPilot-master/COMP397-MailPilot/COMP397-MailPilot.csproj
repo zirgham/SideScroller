@@ -64,6 +64,8 @@
     <Content Include="assets\audio\yay.ogg" />
     <Content Include="assets\images\asteroid.png" />
     <Content Include="assets\images\gameover.png" />
+    <Content Include="assets\images\instructions.png" />
+    <Content Include="assets\images\instructionsLogo.png" />
     <Content Include="assets\images\logo.png" />
     <Content Include="assets\images\playAgainButton.png" />
     <Content Include="assets\images\playGameButton.png" />
@@ -108,6 +110,7 @@
     <TypeScriptCompile Include="Scripts\objects\scoreboard.ts" />
     <TypeScriptCompile Include="Scripts\states\gameover.ts" />
     <TypeScriptCompile Include="Scripts\states\gameplay.ts" />
+    <TypeScriptCompile Include="Scripts\states\instructions.ts" />
     <TypeScriptCompile Include="Scripts\states\menu.ts" />
     <TypeScriptCompile Include="Scripts\typings\createjs-lib\createjs-lib.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\easeljs\easeljs.d.ts" />

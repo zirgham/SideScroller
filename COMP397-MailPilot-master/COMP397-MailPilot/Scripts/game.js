@@ -30,10 +30,13 @@ var stateChanged = false;
 var gamePlay;
 var gameOver;
 var menu;
+var instructions;
 var manifest = [
     { id: "cloud", src: "assets/images/asteroid.png" },
     { id: "island", src: "assets/images/star.png" },
     { id: "ocean", src: "assets/images/space.jpg" },
+    { id: "instructionsLogo", src: "assets/images/instructionsLogo.png" },
+    { id: "instruction", src: "assets/images/instructions.png" },
     { id: "plane", src: "assets/images/spaceship.png" },
     { id: "playButton", src: "assets/images/playGameButton.png" },
     { id: "tryAgainButton", src: "assets/images/playAgainButton.png" },
@@ -82,6 +85,11 @@ function changeState(state) {
             // instantiate menu screen
             menu = new states.Menu();
             currentStateFunction = menu;
+            break;
+        case constants.INSTRUCTIONS_STATE:
+            // instantiate INSTRUCTIONS screen
+            instructions = new states.Instructions();
+            currentStateFunction = instructions;
             break;
         case constants.PLAY_STATE:
             // instantiate game play screen

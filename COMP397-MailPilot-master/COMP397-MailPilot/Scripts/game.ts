@@ -30,6 +30,7 @@ var currentScore = 0;
 var highScore = 0;
 
 
+
 // Game State Variables
 var currentState: number;
 var currentStateFunction: any;
@@ -38,12 +39,14 @@ var stateChanged: boolean = false;
 var gamePlay: states.GamePlay;
 var gameOver: states.GameOver;
 var menu: states.Menu;
-
+var instructions: states.Instructions;
 
 var manifest = [
     { id: "cloud", src: "assets/images/asteroid.png" },
     { id: "island", src: "assets/images/star.png" },
     { id: "ocean", src: "assets/images/space.jpg" },
+    { id: "instructionsLogo", src: "assets/images/instructionsLogo.png" },
+    { id: "instruction", src: "assets/images/instructions.png" },
     { id: "plane", src: "assets/images/spaceship.png" },
     { id: "playButton", src: "assets/images/playGameButton.png" },
     { id: "tryAgainButton", src: "assets/images/playAgainButton.png" },
@@ -108,6 +111,12 @@ function changeState(state: number): void {
             // instantiate menu screen
             menu = new states.Menu();
             currentStateFunction = menu;
+            break;
+
+        case constants.INSTRUCTIONS_STATE:
+            // instantiate INSTRUCTIONS screen
+            instructions = new states.Instructions();
+            currentStateFunction = instructions;
             break;
 
         case constants.PLAY_STATE:
