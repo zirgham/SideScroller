@@ -1,3 +1,4 @@
+//--AUTHOR - ZIRGHAM MOHD.#300801676  last modified- 20th MARCH, 2015
 /// <reference path="../constants.ts" />
 /// <reference path="../objects/gameobject.ts" />
 /// <reference path="../objects/island.ts" />
@@ -11,6 +12,7 @@ var states;
     var GamePlay = (function () {
         function GamePlay() {
             this.clouds = [];
+            this.shield = false;
             // Instantiate Game Container
             this.game = new createjs.Container();
             //Ocean object
@@ -19,6 +21,9 @@ var states;
             //Island object
             this.island = new objects.Island();
             this.game.addChild(this.island);
+            //power planet object
+            this.powerStar = new objects.PowerStar();
+            this.game.addChild(this.powerStar);
             //Plane object
             this.plane = new objects.Plane();
             this.game.addChild(this.plane);
@@ -51,6 +56,10 @@ var states;
                             this.scoreboard.score += 100;
                             this.island.visible = false;
                         }
+                        if (collider.name == "powerStar") {
+                            this.scoreboard.lives++;
+                            this.powerStar.visible = false;
+                        }
                     }
                     collider.isColliding = true;
                 }
@@ -62,12 +71,14 @@ var states;
         GamePlay.prototype.update = function () {
             this.ocean.update();
             this.island.update();
+            this.powerStar.update();
             this.plane.update();
             for (var cloud = 2; cloud >= 0; cloud--) {
                 this.clouds[cloud].update();
                 this.checkCollision(this.clouds[cloud]);
             }
             this.checkCollision(this.island);
+            this.checkCollision(this.powerStar);
             this.scoreboard.update();
             if (this.scoreboard.lives < 1) {
                 this.scoreboard.active = false;

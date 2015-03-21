@@ -1,4 +1,4 @@
-﻿
+﻿//--AUTHOR - ZIRGHAM MOHD.#300801676  last modified- 20th MARCH, 2015
 module objects {
     // PLANE CLASS
     export class Plane extends createjs.Bitmap {

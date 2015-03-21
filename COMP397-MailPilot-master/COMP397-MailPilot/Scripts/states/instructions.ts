@@ -1,4 +1,5 @@
-﻿/// <reference path="../constants.ts" />
+﻿//--AUTHOR - ZIRGHAM MOHD.#300801676  last modified- 20th MARCH, 2015
+/// <reference path="../constants.ts" />
 /// <reference path="../objects/gameobject.ts" />
 /// <reference path="../objects/island.ts" />
 /// <reference path="../objects/ocean.ts" />

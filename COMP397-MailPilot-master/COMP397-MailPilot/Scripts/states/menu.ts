@@ -1,4 +1,6 @@
-﻿/// <reference path="../constants.ts" />
+﻿//--AUTHOR - ZIRGHAM MOHD.#300801676  last modified- 20th MARCH, 2015
+
+/// <reference path="../constants.ts" />
 /// <reference path="../objects/gameobject.ts" />
 /// <reference path="../objects/island.ts" />
 /// <reference path="../objects/ocean.ts" />
@@ -47,12 +49,12 @@ module states {
             */
 
             //Play Button
-            this.playButton = new objects.Button(600, 360, "playButton");
+            this.playButton = new objects.Button(630, 360, "playButton");
             this.playButton.on("click", this.playClicked, this);
             this.game.addChild(this.playButton);
 
             //Instructions Button
-            this.instructionsButton = new objects.Button(350, 360, "instructionsLogo");
+            this.instructionsButton = new objects.Button(300, 360, "instructionsLogo");
             this.instructionsButton.on("click", this.instructionsClicked, this);
             this.game.addChild(this.instructionsButton);
 

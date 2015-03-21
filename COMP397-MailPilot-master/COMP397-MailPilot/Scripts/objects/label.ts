@@ -1,4 +1,5 @@
-﻿/// <reference path="../constants.ts" />
+﻿//--AUTHOR - ZIRGHAM MOHD.#300801676  last modified- 20th MARCH, 2015
+/// <reference path="../constants.ts" />
 module objects {
     // LABEL Class ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     export class Label extends createjs.Text {

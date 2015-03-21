@@ -38,12 +38,14 @@ var stateChanged: boolean = false;
 
 var gamePlay: states.GamePlay;
 var gameOver: states.GameOver;
+//--AUTHOR - ZIRGHAM MOHD.#300801676  last modified- 20th MARCH, 2015
 var menu: states.Menu;
 var instructions: states.Instructions;
 
 var manifest = [
     { id: "cloud", src: "assets/images/asteroid.png" },
     { id: "island", src: "assets/images/star.png" },
+    { id: "powerStar", src: "assets/images/powerStar.png" },
     { id: "ocean", src: "assets/images/space.jpg" },
     { id: "instructionsLogo", src: "assets/images/instructionsLogo.png" },
     { id: "instruction", src: "assets/images/instructions.png" },
